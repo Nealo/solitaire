@@ -1,0 +1,168 @@
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box
+}
+
+#body {
+	background-image: url('../images/background1.jpg');
+	background-position: top-center;
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-size: 100%;
+	font-family: sans-serif;
+	color: #FFF;
+	-moz-user-select: none; /*used to keep double clicks from highlighting everything*/
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#page {
+	width: 685px;
+	margin: 10px auto 10px auto;
+/*	background-image: url('../backgrounds/mochaGrunge/mochaGrunge.png');*/
+}
+#topBar {
+	border-bottom: thin solid #FFF;
+	padding: 10px;
+}
+
+#topBar div, #playArea div {
+	display: inline-block;
+}
+
+#unplayedCards {
+	width: 30%;
+}
+
+#unflippedCardCounter {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	border: thin solid #FFF;
+	z-index: 100;
+	background-color: white;
+	border-radius: 7px;
+	text-align: center;
+	color: #000;
+}
+#storedCards {
+	float: right;
+	width: 65%;
+	text-align: right;
+}
+#storedCards > div, #unplayedCards > div, #cardsArea > div, div.card {
+	width: 82px;
+	height: 115px;
+	border: thin solid #FFF;
+	border-radius: 7px;
+	margin: 5px;
+}
+
+#cardsArea {
+	display: block;
+	padding: 7px;
+	height: 400px;
+	margin: 0px auto 0px auto;
+}
+#playArea {
+	padding: 0px auto 0px auto;
+}
+
+
+
+#scoreBar {
+	border-top: thin solid #FFF;
+	border-bottom: thin solid #FFF;
+	padding: 7px;
+}
+#scoreBar .scoreBarButton {
+	float: right;
+}
+#footer {
+	font-size: 60%;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+div.card {
+	margin: 0px;
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	font-size: 0%
+}
+
+#confirmBox {
+	display: none;
+	position: absolute;
+	border: thin solid #FFF;
+	border-radius: 10px;
+	width: 350px;
+	font-size: 80%;
+	background: white;
+	z-index: 5000000000000000000000000000;
+	color: #000;
+}
+
+#storedCards div {
+	text-align: center;
+	background-color: black;
+	background-repeat: no-repeat;
+	
+}
+#storedCards div.card {
+	background-color: #FFF;
+}
+#storedHearts {
+	background-image: url('../images/human-heart75.png');
+	background-position: center;
+}
+#storedDiamonds {
+	background-image: url('../images/diamonds.png');
+	background-position: top;
+}
+#storedSpades {
+	background-image: url('../images/spade.png');
+	background-position: center;
+}
+#storedClubs {
+	background-image: url('../images/clubs.jpg');
+	background-position: center;
+}
+#confirmHeader h3 {
+	margin: 0px;
+	border-bottom: thin solid #000;
+	text-align: center;
+}
+#confirmBody {
+	padding: 5px 10px;
+}
+#confirmBody p {
+	margin-top: 0px;
+}
+#confirmButtons {
+	margin-left: 10px;
+}
+#refuseConfirmation {
+	float: right;
+	margin-right: 10px;
+}
+
+div.ui-draggable-dragging {
+	z-index: 100 !important; 
+}
+
+div.flipped.clicked {
+	border-color: yellow;
+}
+.red {
+	color: red;
+}
+
+#youWin {
+	display: none;
+	font-size: 400%;
+	font-family: cursive;
+	text-align: center;
+	position: absolute;
+}

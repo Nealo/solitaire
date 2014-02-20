@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Solitairey Confinement</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css">
+		
+	</head>
+	<body id="body">
+		<div id="page">
+			<header id="header">
+
+			</header>
+			
+			<div id="topBar">
+				<div id="unplayedCards">
+					<div id="unflippedCards">
+					</div>
+					
+					<div id="flippedCards">
+					</div>
+
+				</div>
+			
+				<div id="storedCards">
+					<div id="storedHearts" value="H">H
+					</div>
+					<div id="storedDiamonds" value="D">D
+					</div>
+					<div id="storedSpades" value="S">S
+					</div>
+					<div id="storedClubs" value="C">C
+					</div>
+				</div>
+
+			</div>
+
+			<div id="playArea">
+				<div id="cardsArea">
+					<div id="columnOne">
+					</div>
+					<div id="columnTwo">
+					</div>
+					<div id="columnThree">
+					</div>
+					<div id="columnFour">
+					</div>
+					<div id="columnFive">
+					</div>
+					<div id="columnSix">
+					</div>
+					<div id="columnSeven">
+					</div>
+				</div>
+			</div>
+			<div id="scoreBar">
+				Cash: $<span id="cashMoney"> </span>
+				<input id="cardDrawButton" type="button" value="1-Card Draw (D)" class="scoreBarButton">
+				<input id="undoButton" type="button" value="Undo (U)" class="scoreBarButton">
+				<input id="resetGameButton" type="button" value="Reset Game (R)" class="scoreBarButton">
+				<input id="newGameButton" type="button" value="New Game (N)" class="scoreBarButton">
+
+			</div>
+			<div id="confirmBox">
+				<header id="confirmHeader">
+					<h3>Warning: Incoming vaginal discharge.</h3>
+				</header>
+				<div id="confirmBody">
+					<p id="confirmText">
+						This will create a new game, and erase all current progress. Are you sure you would like to proceed?
+					</p>
+					<p id="confirmCheckbox">
+						<input type="checkbox" value="turnOffConfirmations" id="turnOffConfirmations">
+						Check to hide this pop-up in the future.
+					</p>
+					<span id="confirmButtons">
+						<input type="button" value="Tight Butthole" id="acceptConfirmation">
+						<input type="button" value="Loose Butthole" id="refuseConfirmation">
+					</span>
+				</div>
+			</div>
+			<div id="youWin">
+				Handjob!
+			</div>
+			<footer id="footer">
+				<p>
+					This site was made for learning purposes only, when I was still awful at programming.
+				</p>
+			</footer>
+		</div>
+		<div id="unflippedCardCounter">
+			</div>
+
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</body>
+	<script src="js/jquery-1.9.0.js"></script>
+		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+		<script src="js/jquery.event.drag-2.2.js"></script>
+		<script src="js/script.js"></script>
+</html>
